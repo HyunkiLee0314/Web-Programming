@@ -1,0 +1,59 @@
+<!-- 
+Project 2 - Team Mysterious - Web Programming
+Project name: The Game of Life
+Team members: Tin Huynh, Hyunki Lee, JiaWen Li, Sang Kim, Isaiah Smith
+
+Version: 1.0 beta
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="icon" type="imag/gif" href="./images/gameoflife.png"/>
+	<title>The Game of Life</title>  
+</head>
+<body>
+	<h1>Conway's Game of Life</h1><br/>
+
+	<div class = "dropbox">
+		<strong>Please choose a pattern:</strong>
+		<select id="patterns">
+			<option value="1">A Dot</option>
+			<option value="2">Block</option>
+			<option value="3">Beehive</option>
+			<option value="4">Blinker</option>
+			<option value="5">Beacon</option>
+			<option value="6">Toad</option>
+			<option value="7">Glider</option>
+			<option value="8">Lightweight Spaceship</option>
+		</select>
+		<span id="message"></span>
+	</div><br/>
+
+	<div id="gridContainer"></div><br/>
+
+	<div id="controls">
+		<button id="start">Start</button>
+		<button id="stop">Stop</button>
+		<button id="clear">Clear</button>
+		<button id="random">Random</button>
+		<button id="next1">Next 1 Gen</button>
+		<button id="next23">Next 23 Gen</button>
+	</div> <br/>
+
+	<div id="counter">Generation: <span id="generation">0</span></div>
+
+	<br/>
+	<br/>
+
+	<a href = credit.html> <h1> Credit </h1> </a>
+
+	<form action="logout.php">
+		<input type="submit" id="logout-btn" value="Logout"/>
+	</form>
+
+	<script src="game.js"></script>
+</body>
