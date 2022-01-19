@@ -1,0 +1,12 @@
+admin,400
+user1,300
+admin,120
+admin,110
+admin,140
+admin,150
+admin,160
+admin,180
+admin,160
+admin,290
+admin,170
+admin,160
